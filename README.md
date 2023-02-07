@@ -2,62 +2,176 @@
     <img src="https://symfony.com/logos/symfony_black_02.svg">
 </a></p>
 
-The [Symfony binary][1] is a must-have tool when developing Symfony applications
-on your local machine. It provides:
 
-* The best way to [create new Symfony applications][2];
-* A powerful [local web server][3] to develop your projects with support for [TLS certificates][4];
-* A tool to [check for security vulnerabilities][5];
-* Seamless integration with [Platform.sh][6].
 
-Installation
+
+Beschrijving van het project
 ------------
+Pizzaketen Sopranos breidt uit. Daardoor onstaat de behoefte aan een website voor online-bestellingen.
 
-Read the installation instructions on [symfony.com][7].
+De heer Varleone is hoofd automatisering van Sopranos Pizza. Hij is op zoek naar uitvoerders voor het maken en onderhouden van een website voor online-bestellingen.
+Jij gaat deze applicatie zelfstandig ontwerpen en programmeren als beginnend applicatie-ontwikkelaar.
 
-Signature Verification
+### Notitie: in dit project zitten de technieken: Twig, Route, Annotations, Doctrine, inloggen
+
+Project eisen:
+-------------
+* Website met navigatiebalk naar het home, contactgegevens en inlogpagina
+* In de homepagina zie je 3 categorien pizza's:
+  * Vegetarische Pizza (eeeeuw)
+  * Vlees Pizza (Yum)
+  * Vis Pizza (Yak)
+* De klant kiest 1 pizza
+* De klant kiest uit: medium pizza (25cm), large pizza (35cm) of calzone
+* De klant vult een bestelformulier in, waarna de bestelling geplaatst wordt
+* De pizzabakker logt in
+* De pizzabakker ziet alle bestellingen met bestelstatus
+
+Extra:
+* De pizzabakker verandert de bestelstatus (to do, in progress, done)
+* De klant kan per bestelling meerdere pizza's bestellen
+
+Leerdoelen:
 ----------------------
+- De student neemt verantwoordelijkheid voor eigen taken
+- De student vertaalt de user stories naar to do's
+- De student bepaald de user stroies voor de sprint backlog
+- De student maakt een wireframe
+- De student maakt een ERD gebaseerd op de opdracht
+- De student maakt een datadictionary
+- De student programmeert een inlogscherm
+- De student kan ingelogde pizzabakker laten uitloggen
+- De student haalt de pizza categorien uit de oven (database)
+- De student laat de bijbehoorende pizza's bij een categorie zien
+- De student programmeeert een orderformulier met een geselecteerde pizza en een dropdown van sizes
+- De student slaat de orders op in de database
+- De student haalt de orders op om aan de pizzabakker te tonen
+- <b>EXTRA</b>: De student programmeert een pagina waarbij de pizzabakker de status van de order kan wijzigen
+- De student test de pizza applicatie door gebruik te maken van de testtool JosF
+- De student noteert in een logboek review en retro
+- De student presenteert de pizza website
+- De student kan de code uitleggen
+- De student verbeterd zichzelf naar aanleiding van feedback
+- De student werkt met github
+- De student houdt zich aan de gedragsregels in de lessen
 
-Symfony binaries are signed using [cosign][8], which is part of [sigstore][9].
-Signatures can be verified as follows (OS and architecture omitted for clarity):
 
-```console
-$ COSIGN_EXPERIMENTAL=1 cosign verify-blob --signature symfony-cli.sig symfony-cli
-tlog entry verified with uuid: "2b7ca2bfb7ee09114a15d60761c2a0a8c97f07cc20c02e635a92ba137a08a6de" index: 1261963
-Verified OK
+## Release Planning:
+
+```
+Klaar voor de start
+- Projectwijzer bespreken
+- Beoordeling houding bespreken
+```
+```
+Start met project
+- De student vertaalt de user stories naar to do's
+- De student bepaald de user stroies voor de sprint backlog
+- De student maakt een wireframe
+- De student maakt een ERD gebaseerd op de opdracht
+- De student maakt een datadictionary
+
+Sprint oplevering:
+- Funcioneel ontwerp
+- Technisch ontwerp
+- Extra: Behoefte analyse
 ```
 
-The above uses the (currently experimental) [keyless signing][10] method.
-Alternatively, one can verify the signature by also providing the certificate:
+``` 
+Nieuw project
+https://symfonycasts.com/screencast/symfony
+introductie video 1 t/m 12
 
-```console
-$ cosign verify-blob --cert symfony-cli.pem --signature symfony-cli.sig symfony-cli
-Verified OK
+Sprint oplevering:
+- Starten van een nieuw project met routes en twig pagina
+- 2 pagina's af, de home pagina en contact pagina
+```
+``` 
+Database aanmaken
+
+database video 1 t/m 5
+https://symfonycasts.com/screencast/symfony4-doctrine/install
+
+Documentatie:
+https://symfonycasts.com/docs/5.4/doctrine.html
+
+Sprint oplevering:
+- Database aanmaken
+- Category entity maken
+- Homepage met categorien uit database
+```
+``` 
+Database relaties
+
+database relaties video 1 t/m 4
+https://symfonycasts.com/screencast/symfony4-doctrine-relations
+
+Sprint oplevering:
+- Pizza entity maken
+- Relatie aanmaken tussen Category en Pizza
+- Pizza's per category laten zien
+```
+``` 
+Formulieren
+
+video 1 t/m 5 + lezen video 7
+https://symfonycasts.com/screencast/symfony-forms
+
+Documentatie:
+https://symfonycasts.com/docs/5.4/forms.html
+
+Sprint oplevering:
+- Order entity maken
+- Order formulier maken
+- Order in de database opslaan
+```
+```  
+Inloggen en Pizzabakker
+
+Security video 1 t/m 7
+https://symfonycasts.com/screencast/symfony4-security
+
+Documentatie:
+Security (Symfony 5.4 docs)
+Database and the Doctrine ORM (Symfony 5.4 Docs)
+
+Sprint oplevering:
+- Inlog pagina maken
+- Pizzabakker laten inloggen op een pagina
+- Wachtwoord encoderen en decoderen
+- Pizzabakker redirecten naar een overzichten pagina
+```
+``` 
+Testen en opleveren
+
+- De student test de pizza applicatie door gebruik te maken van de testtool Josf inloggen
+
+Sprint oplevering:
+- Functioneel ontwerp
+- Technisch ontwerp
+- JosF test inloggen
+- github adres van de applicatie (internet adres)
+- geexporteerde database (code)
 ```
 
-Security Issues
----------------
+# Wat lever je op aan het eind van dit project
 
-If you discover a security vulnerability, please follow our [disclosure procedure][11].
+- Scrumdocumenten (logboek)
+- Functioneel ontwerp
+  - User stories
+- Technisch ontwerp
+  - ERD
+  - Datadictionary
+- Applicatie Pizza Sopranos
+- JosF met test inloggen
+- Presentatie
+- Git: per US een branch
+- Scrumdocumenten:
+  - Retro/Review
+- Gedrag/Houding:
+  - Aanwezigheid
+  - Deelnemen aan les
+  - Meedoen met les
+  - Huiswerk maken
+  - Les verstoring
 
-Sponsorship [<img src="https://cloudposse.com/wp-content/uploads/2020/10/cloudsmith.svg" width="250" align="right" />](https://cloudsmith.io/)
------------
-
-Package repository hosting is graciously provided by
-[cloudsmith](https://cloudsmith.io/). Cloudsmith is the only fully hosted,
-cloud-native, universal package management solution, that enables your
-organization to create, store and share packages in any format, to any place,
-with total confidence. We believe there’s a better way to manage software
-assets and packages, and they're making it happen!
-
-[1]: https://symfony.com/download
-[2]: https://symfony.com/doc/current/setup.html#creating-symfony-applications
-[3]: https://symfony.com/doc/current/setup/symfony_server.html
-[4]: https://symfony.com/doc/current/setup/symfony_server.html#enabling-tls
-[5]: https://symfony.com/doc/current/setup.html#security-checker
-[6]: https://symfony.com/cloud
-[7]: https://symfony.com/download
-[8]: https://github.com/SigStore/cosign
-[9]: https://www.sigstore.dev/
-[10]: https://github.com/sigstore/cosign/blob/main/KEYLESS.md
-[11]: https://symfony.com/security
