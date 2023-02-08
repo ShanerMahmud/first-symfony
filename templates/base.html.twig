@@ -15,9 +15,14 @@
     </head>
     <body>
 
-        {% block nav %}{% endblock %}
+        {% block nav %}
+        <nav>1,2,3</nav>
+        {% endblock %}
         {% block body %}{% endblock %}
-        {% block footer %}{% endblock %}
+        {% block footer %}
+        <h1>DIT IS DE FOOTER A SAHBI!</h1>
+        {% endblock %}
+        {% block myNewBlock %}{% endblock %}
 
     </body>
 </html>
