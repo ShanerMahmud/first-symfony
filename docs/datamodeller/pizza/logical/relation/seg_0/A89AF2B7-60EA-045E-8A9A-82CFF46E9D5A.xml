@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_1" directorySegmentName="seg_0" id="A89AF2B7-60EA-045E-8A9A-82CFF46E9D5A">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:57:15 UTC</createdTime>
+<ownerDesignName>pizza</ownerDesignName>
+<engineerTo>
+<item key="EFA1769F-BE55-AADE-5F62-A6B500E1D4E9" value="true"/>
+</engineerTo>
+<sourcePk>7D92FFB2-C384-99F2-1F55-278981FB04A7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>68DEFFDB-8C40-B1BA-9BF4-C357690381F7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5BA11F5F-581E-90EF-2D07-87C01AA091B2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="95660AA2-4265-58FA-4AD6-B8BE4152B85B" name="USER">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>6DD606BE-47B1-2543-BD20-433DF2948ACC</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B3FB3D0C-EF2F-EF24-C574-A7A57608709F">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>6267102B-4910-9BBF-E221-55E09A155BD6</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="B82A1628-7E20-59F9-BF89-CA902A4852F1">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>B10F69B0-0B53-B864-ECF0-8A8B8325B283</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="0D29717B-D728-7017-BB27-6757E5A0689D">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>726CFE9D-954A-59D0-0A2C-1226AAE4E245</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wie_gaat_dit_checken" id="0795E9CD-42B3-DD91-CEC6-71B699AD3CA0">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>FC61359E-B24E-8D3C-C443-AF2DE3988B6B</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B63731F-43A6-114F-046F-369FD2AE7C11" name="USER_PK">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>9FA4246B-A44B-BC05-A923-B68709F64EBB</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3FB3D0C-EF2F-EF24-C574-A7A57608709F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

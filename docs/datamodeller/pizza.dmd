@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="pizza" id="B0BCF152-54C5-DB28-FE84-A918B02D3D6A" version="3.5">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:44:39 UTC</createdTime>
+<ownerDesignName>pizza</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B0BCF152-54C5-DB28-FE84-A918B02D3D6A</designId>
+</OSDM_Design>

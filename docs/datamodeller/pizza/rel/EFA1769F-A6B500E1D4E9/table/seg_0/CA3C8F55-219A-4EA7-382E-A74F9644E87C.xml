@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA3C8F55-219A-4EA7-382E-A74F9644E87C" name="PIZZA">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>5BA11F5F-581E-90EF-2D07-87C01AA091B2</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="1359EB92-DACB-6D1E-E998-A5D467F990D5">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>EEBA863B-D82A-495A-7ADA-30F495D89E3D</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="6016DB7D-A452-301F-F424-B2464F926320">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>FA47702B-3B67-02EA-4661-E851E6B49950</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="3A7E0D04-CE64-D3BE-1788-1DF640015A04">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>D8E7041B-103D-C900-6102-79D62166A057</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ingredients" id="5E04B76E-D89C-EC06-9D75-EA913F172879">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>E0D8F3AF-1F8C-E516-009D-0AF45407E0B7</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="image" id="A18D1E02-4DBC-A0FD-5AE9-3BDB80130239">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>2F7525DC-CB45-040F-DEB9-A9058A40EBC0</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="D3251B57-82E2-91EB-98EF-A7BCCC55AA57">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>0E93D62B-6160-7FF8-2B1C-D681C9BAE715</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_id" id="7391E0A5-DF9B-8019-3341-7430D85F05AD">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>9E7E4238-262A-1461-A5C5-756E673E6666</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E218553E-B469-CC0C-3E5B-E2755BB8D5E1" referredColumn="CD8DA51C-D22D-ECAA-2298-F1623A728AB8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4263E75-92F9-881C-7EC7-01C9269D458A" name="PIZZA_PK">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>11D586CD-E4B2-8C2C-182E-38EA0F3F2BC7</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1359EB92-DACB-6D1E-E998-A5D467F990D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FACAEE5-91EB-22E8-9D1B-C11F21DD5F25" name="PIZZA_ORDER_FK">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:59:28 UTC</createdTime>
+<generatorID>A89AF2B7-60EA-045E-8A9A-82CFF46E9D5A</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7391E0A5-DF9B-8019-3341-7430D85F05AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

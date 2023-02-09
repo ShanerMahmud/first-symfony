@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5BA11F5F-581E-90EF-2D07-87C01AA091B2" name="PIZZA">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:44:58 UTC</createdTime>
+<ownerDesignName>pizza</ownerDesignName>
+<engineerTo>
+<item key="EFA1769F-BE55-AADE-5F62-A6B500E1D4E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="EEBA863B-D82A-495A-7ADA-30F495D89E3D">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:47:07 UTC</createdTime>
+<ownerDesignName>pizza</ownerDesignName>
+<engineerTo>
+<item key="EFA1769F-BE55-AADE-5F62-A6B500E1D4E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="FA47702B-3B67-02EA-4661-E851E6B49950">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:47:15 UTC</createdTime>
+<ownerDesignName>pizza</ownerDesignName>
+<engineerTo>
+<item key="EFA1769F-BE55-AADE-5F62-A6B500E1D4E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="D8E7041B-103D-C900-6102-79D62166A057">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:47:24 UTC</createdTime>
+<ownerDesignName>pizza</ownerDesignName>
+<engineerTo>
+<item key="EFA1769F-BE55-AADE-5F62-A6B500E1D4E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ingredients" id="E0D8F3AF-1F8C-E516-009D-0AF45407E0B7">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:47:48 UTC</createdTime>
+<ownerDesignName>pizza</ownerDesignName>
+<engineerTo>
+<item key="EFA1769F-BE55-AADE-5F62-A6B500E1D4E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="image" id="2F7525DC-CB45-040F-DEB9-A9058A40EBC0">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:48:28 UTC</createdTime>
+<ownerDesignName>pizza</ownerDesignName>
+<engineerTo>
+<item key="EFA1769F-BE55-AADE-5F62-A6B500E1D4E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price" id="0E93D62B-6160-7FF8-2B1C-D681C9BAE715">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:48:46 UTC</createdTime>
+<ownerDesignName>pizza</ownerDesignName>
+<engineerTo>
+<item key="EFA1769F-BE55-AADE-5F62-A6B500E1D4E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="9E7E4238-262A-1461-A5C5-756E673E6666">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:57:15 UTC</createdTime>
+<generatorID>A89AF2B7-60EA-045E-8A9A-82CFF46E9D5A</generatorID>
+<ownerDesignName>pizza</ownerDesignName>
+<engineerTo>
+<item key="EFA1769F-BE55-AADE-5F62-A6B500E1D4E9" value="true"/>
+</engineerTo>
+<referedAttribute>9679A5F4-6C57-6217-A31A-3BD519A8357E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="11D586CD-E4B2-8C2C-182E-38EA0F3F2BC7" name="PIZZA PK">
+<createdBy>Acer-Swift-7</createdBy>
+<createdTime>2023-02-09 08:47:11 UTC</createdTime>
+<ownerDesignName>pizza</ownerDesignName>
+<engineerTo>
+<item key="EFA1769F-BE55-AADE-5F62-A6B500E1D4E9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EEBA863B-D82A-495A-7ADA-30F495D89E3D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
