@@ -13,7 +13,7 @@ class VinylController extends AbstractController
     #[Route('/')]
     public function homepage(): Response
     {
-        return new Response('Told you response was coming here, see?');
+        return new Response('Main / Home / Index page');
     }
 
     #[Route('/browse/{slug}')]
