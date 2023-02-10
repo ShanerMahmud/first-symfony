@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+
+            {% block main %}
+
+                <div class="mainLogin rounded" style="background: aliceblue; width: 222px; margin: auto; margin-top: 200px">
+                    <form class="p-3 text-center" action="" method="POST">
+                        <h2 class="text-center mb-0">Log in</h2><br>
+                        <label class="mb-1" for="usernameInput">Username (or email)</label><br>
+                        <input class="mb-1 rounded" type="text" name="username" id="usernameInput"><br>
+                        <label class="mb-1"  for="passwordInput">Password</label><br>
+                        <input class="rounded" type="password" name="password" id="passwordInput" placeholder=""><br><br>
+                        <input type="submit" name="login" class="btn btn-primary" value="Log in">
+                    </form>
+                </div>
+
+            {% endblock %}
+
+
