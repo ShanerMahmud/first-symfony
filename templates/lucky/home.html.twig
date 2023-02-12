@@ -2,3 +2,19 @@
 
 
 
+    {% block nav %}
+        <div class="row text-center">
+            <div class="col-3  bg-black m-0 p-0">
+                <a class="hoverThis" style="display: flex; align-items: center; justify-content: center; height: 60px; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: underline; color: orange;" href="/home">HOME</a>
+            </div>
+            <div class="col-3  bg-black m-0 p-0">
+                <a class="hoverThis" style="display: flex; align-items: center; justify-content: center; height: 60px; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none; color: orange;" href="/contact">CONTACT</a>
+            </div>
+            <div class="col-3  bg-black m-0 p-0">
+                <a class="hoverThis" style="display: flex; align-items: center; justify-content: center; height: 60px; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none; color: orange;" href="/login">LOG IN</a>
+            </div>
+            <div class="col-3 bg-light" style="">
+                {#            <p style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none;">Winkelmandje</p>#}
+            </div>
+        </div>
+    {% endblock %}

@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <style>
+            * {
+                user-select: none;
+            }
             .hoverThis:hover {
                 background: antiquewhite;
             }
@@ -41,32 +44,34 @@
 
 
 <div class="container-fluid">
-    <div class="row text-center">
-        <div class="col-3  bg-black m-0 p-0">
-            <a class="hoverThis" style="display: flex; align-items: center; justify-content: center; height: 60px; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none; color: orange;" href="/home">HOME</a>
+    {% block nav %}
+        <div class="row text-center">
+            <div class="col-3  bg-black m-0 p-0">
+                <a class="hoverThis" style="display: flex; align-items: center; justify-content: center; height: 60px; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none; color: orange;" href="/home">HOME</a>
+            </div>
+            <div class="col-3  bg-black m-0 p-0">
+                <a class="hoverThis" style="display: flex; align-items: center; justify-content: center; height: 60px; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none; color: orange;" href="/contact">CONTACT</a>
+            </div>
+            <div class="col-3  bg-black m-0 p-0">
+                <a class="hoverThis" style="display: flex; align-items: center; justify-content: center; height: 60px; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none; color: orange;" href="/login">LOG IN</a>
+            </div>
+            <div class="col-3 bg-light" style="">
+                {#            <p style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none;">Winkelmandje</p>#}
+            </div>
         </div>
-        <div class="col-3  bg-black m-0 p-0">
-            <a class="hoverThis" style="display: flex; align-items: center; justify-content: center; height: 60px; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none; color: orange;" href="/contact">CONTACT</a>
-        </div>
-        <div class="col-3  bg-black m-0 p-0">
-            <a class="hoverThis" style="display: flex; align-items: center; justify-content: center; height: 60px; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none; color: orange;" href="/login">LOG IN</a>
-        </div>
-        <div class="col-3 bg-light" style="">
-{#            <p style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none;">Winkelmandje</p>#}
-        </div>
-    </div>
+    {% endblock %}
 {#    <div class="row">#}
 {#        <div class="col-9 m-0 p-0"><img width="100%" src="/img/pizza-hero.jpg" alt=""></div>#}
 {#    </div>#}
     <div class="row">
         <div class="col-9 mainSection" style="height: 100vh; position: fixed; overflow: hidden">
             {% block main %}
-                <h1 class="text-center">Home</h1>
+
             {% endblock %}
         </div>
         <div class="col-3 bg-light" style="height: 100vh; position: fixed; overflow: hidden; right: 0">
             {% block shoppingCart %}
-                <h1 class="text-center mt-5">Shopping Cart</h1>
+                <h1 class="text-center mt-5">Winkelmandje</h1>
             {% endblock %}
         </div>
     </div>
