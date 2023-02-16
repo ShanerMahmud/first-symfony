@@ -13,8 +13,26 @@
             <div class="col-3  bg-black m-0 p-0">
                 <a class="hoverThis" style="display: flex; align-items: center; justify-content: center; height: 60px; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none; color: orange;" href="/login">LOG IN</a>
             </div>
-            <div class="col-3 bg-light" style="">
-                {#            <p style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; user-select: none; font-size: 22pt; font-weight: bold; text-decoration: none;">Winkelmandje</p>#}
-            </div>
+
         </div>
     {% endblock %}
+
+
+    {% block main %}
+
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+
+{#        {% for character in characters %}#}
+{#            <p>Dit is: {{ character.name }}</p>#}
+{#        {% endfor %}#}
+
+    {% endblock %}
+

@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Repository\CharacterRepository;
+use App\Repository\ProductRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Tests\DependencyInjection\RendererService;
@@ -10,16 +12,10 @@ use function Symfony\Component\String\u;
 
 class MainController extends AbstractController
 {
-    #[Route('/')]
+    #[Route('/', name: 'home')]
     public function index()
     {
-        $number = random_int(0, 100);
-        $title = "Hello World";
-
-        return $this->render('lucky/home.html.twig', [
-            'number' => $number,
-            'title' => $title
-        ]);
+        return $this->render('lucky/home.html.twig');
     }
     #[Route('/contact')]
     public function contact()
@@ -29,32 +25,37 @@ class MainController extends AbstractController
     #[Route('/login')]
     public function login()
     {
-
         return $this->render('lucky/login.html.twig');
     }
     #[Route('/home')]
     public function homepage(): Response
     {
+
         return $this->render('lucky/home.html.twig');
     }
 
     #[Route('/browse/{slug}')]
-    public function browse(string $slug = null): Response
+    public function browse(string $slug): Response
     {
         if($slug){
             $title = "Genre: " . u(str_replace("-", " ", $slug))->title(true);
         } else {
-            $title = "";
+            $title = "Hello World";
         }
 
         return new Response($title);
     }
 
     #[Route('/lucky')]
-    public function lucky(): Response
+    public function lucky(CharacterRepository $characterRepository): Response
     {
-      $luckyNumber = random_int(1,100);
-        return new Response("My lucky number is: " . $luckyNumber);
+      $character = $characterRepository->findAll();
+        return $this->render('lucky/home.html.twig', [
+            'characters' => $character
+        ]);
+
+
+
     }
 
     #[Route('/inloggen')]
